@@ -27,6 +27,10 @@
         "destination": "tspconfig.yaml"
       },
       {
+        "path": "./common/suppressions.yaml",
+        "destination": "suppressions.yaml"
+      },
+      {
         "path": "./arm-operations/examples/2021-10-01-preview/Operations_List.json",
         "destination": "examples/2021-10-01-preview/Operations_List.json"
       },
@@ -90,6 +94,10 @@
       {
         "path": "./common/tspconfig.yaml",
         "destination": "tspconfig.yaml"
+      },
+      {
+        "path": "./common/suppressions.yaml",
+        "destination": "suppressions.yaml"
       },
       {
         "path": "./arm-alltypes/examples/2021-10-01-preview/Operations_List.json",
