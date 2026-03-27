@@ -152,5 +152,57 @@
         "initialValue": "2021-10-01-preview"
       }
     }
-  }
+  },
+  "azure-arm-minimal-v2": {
+    "title": "(rest-api-spec repo) Azure Resource Manager Service Project with only Operations Resource Type (v2 folder structure)",
+    "description": "Create a project with only operations resource type in rest-api-spec repo, representing an Azure service ARM API using the new v2 folder structure. IMPORTANT: This should be run from the 'specification/<org>/resource-manager/<namespace>/<service>' folder!",
+    "compilerVersion": "1.0.0-rc.0",
+    "libraries": [],
+    "skipCompilerPackage": true,
+    "config": {
+      "emit": ["@azure-tools/typespec-autorest"]
+    },
+    "files": [
+      {
+        "path": "./arm-operations/examples/2021-10-01-preview/Operations_List.json",
+        "destination": "examples/2021-10-01-preview/Operations_List.json"
+      },
+      {
+        "path": "./arm-operations/main.tsp",
+        "destination": "main.tsp"
+      },
+      {
+        "path": "./arm-operations/operation.tsp",
+        "destination": "operation.tsp"
+      },
+      {
+        "path": "./minimal-v2/readme.md",
+        "destination": "readme.md"
+      },
+      {
+        "path": "./common/suppressions.yaml",
+        "destination": "suppressions.yaml"
+      },
+      {
+        "path": "./minimal-v2/tspconfig.yaml",
+        "destination": "tspconfig.yaml"
+      },
+      {
+        "path": "./minimal-v2/root-readme.md",
+        "destination": "../../readme.md"
+      }
+    ],
+    "inputs": {
+      "ServiceNamespace": {
+        "description": "Please provide ARM Resource Provider Name in Pascal case:",
+        "type": "text",
+        "initialValue": "Microsoft.Contoso"
+      },
+      "APIVersion": {
+        "description": "Please provide API version:",
+        "type": "text",
+        "initialValue": "2021-10-01-preview"
+      }
+    }
+  }  
 }
