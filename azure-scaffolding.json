@@ -164,6 +164,11 @@
     },
     "files": [
       {
+        "path": "package.json",
+        "destination": "package.json",
+        "skipGeneration": true
+      },
+      {
         "path": "./arm-operations/examples/2021-10-01-preview/Operations_List.json",
         "destination": "examples/2021-10-01-preview/Operations_List.json"
       },
