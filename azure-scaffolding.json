@@ -193,6 +193,10 @@
         "destination": "tspconfig.yaml"
       },
       {
+        "path": "./minimal-v2/service.yaml",
+        "destination": "service.yaml"
+      },
+      {
         "path": "./minimal-v2/root-readme.md",
         "destination": "../../readme.md"
       }
